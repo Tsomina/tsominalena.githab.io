@@ -1,0 +1,292 @@
+@media(max-width: 1200px) {
+  .menu {
+    &_item {
+      padding-right: 20px;
+    }
+
+    &_link {
+      font-size: 13px;
+    }
+
+    .promo {
+      &_header {
+        font-size: 50px;
+      }
+    }
+
+    .reason {
+      &_item_card {
+        align-items: flex-start;
+      }
+    }
+
+    &_item_card_text {
+      width: 300px;
+    }
+  }
+
+  .footer .footer_wrapper {
+    flex-direction: column;
+  }
+
+  .footer .footer_wrapper>div {
+    flex-grow: 1;
+    flex-basis: 0;
+    justify-content: center;
+  }
+}
+
+@media(max-width: 991px) {
+  .menu {
+    &_item {
+      padding-right: 8px;
+    }
+
+    &_link {
+      font-size: 10px;
+    }
+  }
+
+  .subheader {
+    &_logo {
+      img {
+        width: 100%;
+      }
+    }
+
+    &_official {
+      font-size: 11px;
+    }
+
+    &_phone {
+      font-size: 18px;
+    }
+
+    &_btn {
+      margin-top: 21px;
+      height: 40px;
+      width: 100%;
+    }
+  }
+
+  .promo {
+    &_header {
+      font-size: 40px;
+    }
+
+    &_subheader {
+      font-size: 30px;
+    }
+  }
+
+  .reason_item {
+    .row {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .col-6 {
+      width: 100%;
+    }
+
+    &_item_card {
+      flex-direction: column;
+      align-items: center;
+      margin-right: 0;
+    }
+
+    &_item_card_text {
+      width: 300px;
+      margin-top: 20px;
+    }
+  }
+
+  .reason_wrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu {
+    opacity: 0;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 20;
+    transition: 0.3s all;
+
+    &_item {
+      border: none;
+      font-size: 20px;
+    }
+
+    &_link {
+      font-size: 20px;
+    }
+
+    &_active {
+      opacity: 1;
+    }
+
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+
+    span {
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: #fff;
+      margin-bottom: 2px;
+      transition: 0.5s all;
+    }
+
+    &_active {
+      span {
+        margin-bottom: -2px;
+
+        &:nth-child(1) {
+          transform: translateY(3px) rotate(-45deg);
+        }
+
+        &:nth-child(2) {
+          display: none;
+        }
+
+        &:nth-child(3) {
+          transform: translateY(3px) rotate(45deg);
+        }
+      }
+    }
+  }
+
+  .xs-hidden {
+    display: none;
+  }
+
+  .xs-visible {
+    display: block;
+  }
+
+  .subheader {
+    &_phone {
+      display: block;
+      margin-top: 10px;
+      color: #fffff;
+      font-size: 16px;
+      font-weight: 400;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    &_btn {
+      display: block;
+      width: 200px;
+      height: 40px;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+  }
+
+  .promo {
+    &_header {
+      line-height: 45px;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .subheader {
+    height: 60px;
+
+    &_official {
+      display: none;
+    }
+
+    &_logo {
+      margin-top: 16px;
+    }
+
+    &_phone {
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: uppercase;
+      margin-top: 11px;
+    }
+
+    &_btn {
+      width: 110px;
+      height: 22px;
+      font-size: 10px;
+      margin-top: px;
+    }
+  }
+
+  .promo {
+    min-height: 400px;
+    padding: 93px 0 35px 0;
+
+    &_descr {
+      display: none;
+    }
+
+    &_header {
+      font-size: 30px;
+      padding: 0 24px;
+      line-height: 35px;
+    }
+
+    &_subheader {
+      font-size: 20px;
+      margin-top: 33px;
+      padding: 0 10px;
+      line-height: 30px;
+    }
+
+    &_btn {
+      width: 210px;
+      height: 50px;
+      margin-top: 72px;
+    }
+  }
+
+  .menu {
+    width: 85%;
+  }
+
+  .reason_item {
+    padding: 22px 0 36px;
+
+    &_wrapper {
+      margin-top: 26px;
+    }
+
+    &_item_card {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .title {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 16px;
+  }
+}
